@@ -5,8 +5,51 @@
     <title>CSD_2214_6_WEEK08_C0742322</title>
     <link href="css/default.css" rel="stylesheet" />
 </head>
-<body>
+<body onload="addnumbers.adder();">
     <div>Content goes </div>
     <script src="js/main.js"></script>
+    <script>
+        alert("ok");
+
+        //using while
+       /* var calculator = {
+             starter : 1109,
+             stepdown: 11,
+             end: 119,
+            adder: function () {
+                var sum = 0;
+                var i = 1109;
+                while (i >= 119) {
+                    sum = sum + i;
+                    document.writeln(i);
+                    i = i - 11;
+                }
+                document.writeln(i);
+                alert("sum is " + sum);
+            }
+
+        };*/
+        //using for loop
+        var cal = {
+            starter: 1109,
+            stepdown: 11,
+            end: 119,
+            adder: function () {
+                var sum = 0;
+                var i = 1109;
+                for (var i = 1109; i >= 119;) {
+                    sum = sum + i;
+                    document.writeln(i);
+                    i = i - 11;
+                }
+                document.writeln(i);
+                document.writeln("<p></p>",sum);
+                alert("sum is " + sum);
+            }
+
+        };
+                        
+    </script>
+    <button onclick="cal.adder();">button</button>
 </body>
 </html>
